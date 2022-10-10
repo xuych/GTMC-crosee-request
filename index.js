@@ -1,6 +1,5 @@
 (function (win) {
-  if (!document.getElementById("cross-request-sign")) {
-    console.log(document.getElementById("cross-request-sign"), 111);
+  if (!document.getElementById("cross-request-gtmc")) {
     return;
   }
 
@@ -269,8 +268,6 @@
   }
 
   win.crossRequest = run;
-  console.log("crossRequest success", win.crossRequest);
-  debugger;
   if (typeof define == "function" && define.amd) {
     define("crossRequest", [], function () {
       return run;
